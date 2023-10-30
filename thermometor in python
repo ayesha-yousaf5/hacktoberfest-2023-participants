@@ -1,0 +1,15 @@
+class Thermometer:
+    def __init__(self, temperature_celsius):
+        self.temperature_celsius = temperature_celsius
+
+    def get_temperature_fahrenheit(self):
+        return (self.temperature_celsius * 9/5) + 32
+
+# Create an instance of the Thermometer class with a temperature of 25 degrees Celsius
+thermometer = Thermometer(25)
+
+# Use the get_temperature_fahrenheit method to calculate the temperature in Fahrenheit
+temperature_fahrenheit = thermometer.get_temperature_fahrenheit()
+
+# Print the calculated temperature
+print(f"The temperature is {temperature_fahrenheit} degrees Fahrenheit.")
